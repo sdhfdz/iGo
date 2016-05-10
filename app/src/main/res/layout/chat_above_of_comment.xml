@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#99ebebeb"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/ll_click_to_commodityDetail"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/chat_product_bg">
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/product_name"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="包邮斯伯丁 NBA篮球 740 60 4Y室内室外掌控"/>
+                <TextView
+                    android:id="@+id/article_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="3dp"
+                    android:singleLine="true"
+                    android:textColor="#F00"
+                    android:textSize="17sp"
+                    android:text="$250"/>
+                <TextView
+                    android:id="@+id/sales_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="15dp"
+                    android:textSize="17sp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/article_price"
+                    android:text="销量204"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1.2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/description_pic_in_above"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="15dp"
+        android:id="@+id/title_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="[ 图片展示 ]"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_description_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--   <ImageView
+               android:padding="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:src="@drawable/qrj"/>-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+
+   <RelativeLayout
+        android:background="#FFFFFF"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/chat_more_comms"/>
+        <TextView
+            android:id="@+id/comment_total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部评论   (2)"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/titlebar"
+         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:textSize="15sp"
+            android:text="国家或地区"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/choose_country"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:text="中国"
+            android:textColor="#06b5e2" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/country_code"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:text="+86"
+            android:textColor="#000000" />
+        <EditText
+            android:id="@+id/register_edit_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF"
+            android:digits="1234567890"
+            android:cursorVisible="false"
+            android:layout_marginLeft="10dp"
+            android:hint="请输入手机号码"
+            android:textCursorDrawable="@null"
+            android:layout_weight="12" />
+
+        <ImageView
+            android:onClick="clear_data"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/register_rightno" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/register_next"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#06b5e2"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:text="下一步"
+        />
+</LinearLayout>

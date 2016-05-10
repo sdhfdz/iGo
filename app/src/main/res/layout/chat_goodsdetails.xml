@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical"
+    android:id="@+id/rl"
+    tools:context="com.sdh.sdh.myapplication10.MainActivity">
+    <include
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        layout="@layout/titlebar"
+        />
+    <LinearLayout
+
+        android:id="@+id/input_comment_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#aa06b5e2">
+
+        <ImageView
+            android:layout_weight="1.5"
+            android:id="@+id/iv_lihai"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/char_like_off" />
+
+        <EditText
+            android:layout_weight="5.3"
+            android:id="@+id/input_comment"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="#FFFFFF"
+            android:hint="评论"
+            android:inputType="textMultiLine"
+            android:textColor="#AA000000"
+            android:textColorHint="#d2d2d2"
+            android:textCursorDrawable="@null"
+            android:textSize="15sp" />
+
+        <Button
+            android:onClick="click_to_comment"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="#06b5e2"
+            android:textSize="15sp"
+            android:text="发送" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/comment_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/input_comment_bottom"
+        android:layout_below="@id/titlebar">
+    </ListView>
+    <ProgressBar
+        android:id="@+id/article_pb_progress"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:indeterminateDrawable="@drawable/custom_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>
