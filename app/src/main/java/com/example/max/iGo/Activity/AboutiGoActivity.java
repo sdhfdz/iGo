@@ -16,7 +16,7 @@ import com.example.max.iGo.R;
 public class AboutiGoActivity extends BaseActivity {
 
     private TextView titleBarText;
-    private ImageView image_back;//aboutiGao
+    private ImageView image_back;//aboutiGaoii
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
